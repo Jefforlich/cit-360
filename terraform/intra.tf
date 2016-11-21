@@ -149,7 +149,7 @@ resource "aws_route_table_association" "private_subnet_c_rt_assoc" {
 
 #The security group to allow SSH and only allow IP's from a certain
 #CIDR block.
-resource "aws_security_group" "ssh" {
+resource "aws_security_group" "ssh_public" {
   name = "cit360_example"
   vpc_id = "${var.vpc_id}"
 
