@@ -1,8 +1,3 @@
-# Add your VPC ID to default below
-variable "vpc_id" {
-  description = "VPC ID for usage throughout the build process"
-  default = "vpc-42485426"
-}
 
 provider "aws" {
   region = "us-west-2"
